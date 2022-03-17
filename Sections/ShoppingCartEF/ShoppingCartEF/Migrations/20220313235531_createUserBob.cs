@@ -9,12 +9,12 @@ namespace ShoppingCartEF.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            //migrationBuilder.CreateUser("Bob", "password");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            //migrationBuilder.DropUser("Bob");
         }
     }
 }

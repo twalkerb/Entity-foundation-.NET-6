@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ShoppingCartEF.Generator
 {
-    internal class ShoppingMigrationSqlGenerator : SqlServerMigrationsSqlGenerator
+    public class ShoppingMigrationSqlGenerator : SqlServerMigrationsSqlGenerator
     {
         public ShoppingMigrationSqlGenerator(
             MigrationsSqlGeneratorDependencies dependencies,
@@ -24,9 +24,14 @@ namespace ShoppingCartEF.Generator
                      IModel model,
                      MigrationCommandListBuilder builder)
         {
+            
             if (operation is CreateUserOperation createUserOperation)
             {
                 Generate(createUserOperation, builder);
+            }
+            else if (operation is DropUserOperation dropUserOperation)
+            {
+                Generate(dropUserOperation, builder);
             }
             else
             {
@@ -40,12 +45,36 @@ namespace ShoppingCartEF.Generator
         {
             var sqlHelper = Dependencies.SqlGenerationHelper;
             var stringMapping = Dependencies.TypeMappingSource.FindMapping(typeof(string));
-
+            if (stringMapping != null)
             builder
                 .Append("CREATE USER ")
                 .Append(sqlHelper.DelimitIdentifier(operation.Name))
                 .Append(" WITH PASSWORD = ")
                 .Append(stringMapping.GenerateSqlLiteral(operation.Password))
+                .AppendLine(sqlHelper.StatementTerminator)
+                .EndCommand();
+            else
+                builder
+                    .Append("CREATE USER ")
+                    .Append(sqlHelper.DelimitIdentifier(operation.Name))
+                    .Append(" WITH PASSWORD = '")
+                    .Append(operation.Password)
+                    .Append("'")
+                    .AppendLine(sqlHelper.StatementTerminator)
+                    .EndCommand();
+
+        }
+
+        private void Generate(
+           DropUserOperation operation,
+           MigrationCommandListBuilder builder)
+        {
+            var sqlHelper = Dependencies.SqlGenerationHelper;
+            var stringMapping = Dependencies.TypeMappingSource.FindMapping(typeof(string));
+
+            builder
+                .Append("Drop USER ")
+                .Append(sqlHelper.DelimitIdentifier(operation.Name))
                 .AppendLine(sqlHelper.StatementTerminator)
                 .EndCommand();
         }

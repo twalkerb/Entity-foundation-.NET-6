@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
 using ShoppingCartEF.Entities;
+using ShoppingCartEF.Generator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +22,10 @@ namespace ShoppingCartEF.Data
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-     => options.UseSqlServer(_connectionString);
+             => options
+            .UseSqlServer(_connectionString)
+            .ReplaceService<IMigrationsSqlGenerator, ShoppingMigrationSqlGenerator>();
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Part>()

@@ -20,5 +20,16 @@ namespace ShoppingCartEF.Extensions
 
             return new OperationBuilder<CreateUserOperation>(operation);
         }
+
+        public static OperationBuilder<DropUserOperation> DropUser(
+          this MigrationBuilder migrationBuilder,
+          string name)
+        {
+            var operation = new DropUserOperation { Name = name };
+            migrationBuilder.Operations.Add(operation);
+
+            return new OperationBuilder<DropUserOperation>(operation);
+        }
+
     }
 }
