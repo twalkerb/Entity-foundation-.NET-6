@@ -16,15 +16,16 @@ namespace ShoppingCartEF.Data
         public DbSet<Part> Parts { get; set; }
 
         private string _connectionString = "";
-        public ShoppingCartDS()
+
+        public ShoppingCartDS(DbContextOptions<ShoppingCartDS> options, string connectionString) : base(options)
         {
-            _connectionString = "Data Source = DevOne; Initial Catalog = ShoppingCartDev; integrated security = True; ";
+            _connectionString = connectionString;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
              => options
-            .UseSqlServer(_connectionString)
-            .ReplaceService<IMigrationsSqlGenerator, ShoppingMigrationSqlGenerator>();
+                .UseSqlServer(_connectionString, b => b.MigrationsAssembly("ShoppingCartMigrations"))
+                .ReplaceService<IMigrationsSqlGenerator, ShoppingMigrationSqlGenerator>();
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
