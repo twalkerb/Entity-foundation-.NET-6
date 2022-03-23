@@ -21,7 +21,7 @@ namespace ShoppingCartMigrations.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ShoppingCartEF.Entities.Order", b =>
+            modelBuilder.Entity("ShoppingCartMigrations.Entities.Order", b =>
                 {
                     b.Property<string>("OrderId")
                         .HasColumnType("nvarchar(450)");
@@ -40,10 +40,10 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("OrderId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
-            modelBuilder.Entity("ShoppingCartEF.Entities.Part", b =>
+            modelBuilder.Entity("ShoppingCartMigrations.Entities.Part", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
