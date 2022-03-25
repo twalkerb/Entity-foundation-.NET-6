@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoppingCartEF.Entities
+namespace ShoppingCartEF2.Entities
 {
     public class Order
     {

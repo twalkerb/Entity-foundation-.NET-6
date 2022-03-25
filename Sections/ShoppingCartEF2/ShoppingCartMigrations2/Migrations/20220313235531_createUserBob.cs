@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
-using ShoppingCartEF.Extensions;
+using ShoppingCartEF2.Extensions;
 
 #nullable disable
 

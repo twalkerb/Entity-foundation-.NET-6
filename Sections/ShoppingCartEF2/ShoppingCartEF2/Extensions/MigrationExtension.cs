@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoppingCartEF.Extensions
+namespace ShoppingCartEF2.Extensions
 {
     public static class MigrationExtension
     {

@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ShoppingCartEF2.Entities
 {
-    public class Part
+    public class HumanBase
     {
+        [Column(Order = 0)]
         public int Id { get; set; }
-        public string PartName { get; set; }
-        public decimal ListPrice { get; set; }
     }
 }

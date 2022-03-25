@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShoppingCartEF2.Data;
 
@@ -11,9 +12,10 @@ using ShoppingCartEF2.Data;
 namespace ShoppingCartMigrations.Migrations
 {
     [DbContext(typeof(ShoppingCartDS))]
-    partial class ShoppingCartDSModelSnapshot : ModelSnapshot
+    [Migration("20220325022508_LibraryBooks")]
+    partial class LibraryBooks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

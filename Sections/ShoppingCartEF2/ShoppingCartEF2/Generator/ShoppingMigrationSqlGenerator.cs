@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
-using ShoppingCartEF.Extensions;
+using ShoppingCartEF2.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoppingCartEF.Generator
+namespace ShoppingCartEF2.Generator
 {
     public class ShoppingMigrationSqlGenerator : SqlServerMigrationsSqlGenerator
     {

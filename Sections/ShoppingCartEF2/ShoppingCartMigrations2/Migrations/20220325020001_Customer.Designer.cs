@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShoppingCartEF2.Data;
 
@@ -11,9 +12,10 @@ using ShoppingCartEF2.Data;
 namespace ShoppingCartMigrations.Migrations
 {
     [DbContext(typeof(ShoppingCartDS))]
-    partial class ShoppingCartDSModelSnapshot : ModelSnapshot
+    [Migration("20220325020001_Customer")]
+    partial class Customer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,39 +23,6 @@ namespace ShoppingCartMigrations.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("ShoppingCartEF2.Entities.Book", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("OnLoanLibraryId")
-                        .IsRequired()
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PrimaryLibraryId")
-                        .IsRequired()
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)")
-                        .HasColumnName("PurchasePrice");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OnLoanLibraryId");
-
-                    b.HasIndex("PrimaryLibraryId");
-
-                    b.ToTable("Books");
-                });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Customer", b =>
                 {
@@ -84,23 +53,6 @@ namespace ShoppingCartMigrations.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("ShoppingCartEF2.Entities.Library", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("LibraryName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Libaries");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Note", b =>
@@ -176,32 +128,6 @@ namespace ShoppingCartMigrations.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Parts", null, t => t.ExcludeFromMigrations());
-                });
-
-            modelBuilder.Entity("ShoppingCartEF2.Entities.Book", b =>
-                {
-                    b.HasOne("ShoppingCartEF2.Entities.Library", "OnLoanLibrary")
-                        .WithMany("BooksOnLoan")
-                        .HasForeignKey("OnLoanLibraryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ShoppingCartEF2.Entities.Library", "PrimaryLibrary")
-                        .WithMany("PrimaryBooks")
-                        .HasForeignKey("PrimaryLibraryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("OnLoanLibrary");
-
-                    b.Navigation("PrimaryLibrary");
-                });
-
-            modelBuilder.Entity("ShoppingCartEF2.Entities.Library", b =>
-                {
-                    b.Navigation("BooksOnLoan");
-
-                    b.Navigation("PrimaryBooks");
                 });
 #pragma warning restore 612, 618
         }

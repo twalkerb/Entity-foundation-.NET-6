@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using ShoppingCartEF.Data;
+using ShoppingCartEF2.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoppingCartEF
+namespace ShoppingCartEF2
 {
     public class DesignTimeDbContextFactory :
            IDesignTimeDbContextFactory<ShoppingCartDS>
