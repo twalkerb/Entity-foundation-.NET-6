@@ -23,5 +23,8 @@ namespace ShoppingCartEF2.Entities
         [Column("PurchasePrice", TypeName = "decimal(18, 2)")]
         public decimal UnitPrice { get; set; }
 
+
+        public string ISBN { get; set; }
+
     }
 }

@@ -17,6 +17,11 @@ namespace ShoppingCartEF2.Entities
         [NotMapped]
         public DateTime LastSavedToDatabase { get; set; }
 
+        public int? CreditScore { get; set; }
+        public DateTime CreditScoreDate { get; set; }
+
+        public decimal CreditLimit { get; set; }
+        public int CreditDays { get; set; }
 
     }
 }

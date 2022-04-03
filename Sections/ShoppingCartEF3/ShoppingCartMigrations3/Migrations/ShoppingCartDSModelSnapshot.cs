@@ -17,8 +17,10 @@ namespace ShoppingCartMigrations.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .HasDefaultSchema("Shopping")
                 .HasAnnotation("ProductVersion", "6.0.3")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("Schema Version", "3.2");
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
@@ -30,9 +32,17 @@ namespace ShoppingCartMigrations.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Name")
+                    b.Property<string>("ISBN")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)")
+                        .HasColumnName("InternationStandardBookNumber");
+
+                    b.Property<string>("Name")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int?>("OnLoanLibraryId")
                         .IsRequired()
@@ -48,11 +58,15 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasAlternateKey("ISBN");
+
+                    b.HasIndex("Name");
+
                     b.HasIndex("OnLoanLibraryId");
 
                     b.HasIndex("PrimaryLibraryId");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("LibaryBooks", "Shopping");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Customer", b =>
@@ -63,6 +77,20 @@ namespace ShoppingCartMigrations.Migrations
                         .HasColumnOrder(0);
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CreditDays")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(30);
+
+                    b.Property<decimal>("CreditLimit")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("CreditScore")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreditScoreDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<decimal>("CustomerBudget")
                         .HasColumnType("decimal(18,6)");
@@ -83,7 +111,7 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers", (string)null);
+                    b.ToTable("Customers", "Shopping");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Library", b =>
@@ -100,7 +128,7 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Libaries", (string)null);
+                    b.ToTable("Libaries", "Shopping");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Note", b =>
@@ -133,7 +161,7 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("NoteId");
 
-                    b.ToTable("Customer_Notes", (string)null);
+                    b.ToTable("CustomerNotes", "dbo");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Order", b =>
@@ -155,7 +183,7 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("OrderId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders", "Shopping");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Part", b =>
@@ -175,7 +203,7 @@ namespace ShoppingCartMigrations.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Parts", null, t => t.ExcludeFromMigrations());
+                    b.ToTable("Parts", "Shopping", t => t.ExcludeFromMigrations());
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Book", b =>
