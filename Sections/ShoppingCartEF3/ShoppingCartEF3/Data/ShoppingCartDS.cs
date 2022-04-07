@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using ShoppingCartEF2.Entities;
 using ShoppingCartEF2.Generator;
+using ShoppingCartEF3.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -74,6 +75,24 @@ namespace ShoppingCartEF2.Data
 
             modelBuilder.Entity<Book>().Property(b => b.Name).IsRowVersion();
             //modelBuilder.Entity<Book>().Property(b => b.Name).IsConcurrencyToken(true);
+
+
+            // one-to-one
+            modelBuilder.Entity<Customer>()
+                       .HasOne<CustomerAddress>(s => s.Address)
+                       .WithOne(ad => ad.Customer)
+                       .HasForeignKey<CustomerAddress>(ad => ad.AddressOfCustomerId);
+
+            // one-to-many
+            modelBuilder.Entity<Customer>()
+            .HasOne<CustomerType>(s => s.CustomerType)
+            .WithMany(g => g.Customers)
+            .HasForeignKey(s => s.CustomerTypeId);
+
+            // many-to-many
+            // the foreign keys must be the composite primary key in the joining table.
+            // This can only be configured using Fluent API
+            modelBuilder.Entity<CustomerBook>().HasKey(cb => new { cb.CustomerId, cb.BookId });
 
         }
 

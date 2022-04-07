@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using ShoppingCartEF3.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -22,6 +24,15 @@ namespace ShoppingCartEF2.Entities
 
         public decimal CreditLimit { get; set; }
         public int CreditDays { get; set; }
+
+        // one-to-one
+        public CustomerAddress Address { get; set; }
+
+        // one-to-many
+        public int CustomerTypeId { get; set; }
+        public CustomerType CustomerType { get; set; }
+
+
 
     }
 }
