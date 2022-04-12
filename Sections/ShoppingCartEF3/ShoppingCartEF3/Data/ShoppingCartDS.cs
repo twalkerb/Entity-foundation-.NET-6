@@ -21,6 +21,10 @@ namespace ShoppingCartEF2.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<Library> Libaries { get; set; }
 
+
+        // raw Sql Support
+        public DbSet<CustomerSearchResult> CustomSearchResults { get; set; }
+
         private string _connectionString = "";
 
         public ShoppingCartDS(DbContextOptions<ShoppingCartDS> options, string connectionString) : base(options)
