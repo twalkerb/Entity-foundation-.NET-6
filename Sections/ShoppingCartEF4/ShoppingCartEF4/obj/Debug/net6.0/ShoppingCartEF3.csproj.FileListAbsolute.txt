@@ -1,0 +1,14 @@
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartEF3.deps.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartEF3.runtimeconfig.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartEF3.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartEF3.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.csproj.AssemblyReference.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.AssemblyInfoInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.AssemblyInfo.cs
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.csproj.CoreCompileInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ref\ShoppingCartEF3.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\ShoppingCartEF3.genruntimeconfig.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\obj\Debug\net6.0\refint\ShoppingCartEF3.dll

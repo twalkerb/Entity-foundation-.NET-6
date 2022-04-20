@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "82b2e79f-6762-4faf-bd06-b6e260a45993": {
+      "ProjectGuid": "82b2e79f-6762-4faf-bd06-b6e260a45993",
+      "DisplayName": "ShoppingCartEF3",
+      "ColorIndex": 0
+    },
+    "f78e7cfa-5216-4bfb-8b24-47b7b9bc9c92": {
+      "ProjectGuid": "f78e7cfa-5216-4bfb-8b24-47b7b9bc9c92",
+      "DisplayName": "ShoppingCartMigrations3",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
