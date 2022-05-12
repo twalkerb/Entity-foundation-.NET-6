@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartEF5", "Shopping
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartMigrations5", "ShoppingCartMigrations5\ShoppingCartMigrations5.csproj", "{F78E7CFA-5216-4BFB-8B24-47B7B9BC9C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{DC623AE3-EB7C-44D8-95E3-08B21E334BD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "TestProject1\TestProject1.csproj", "{DC623AE3-EB7C-44D8-95E3-08B21E334BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartBusinessServices", "ShoppingCartBusinessServices\ShoppingCartBusinessServices.csproj", "{C40ACF97-939F-4E7A-869A-7C558713D062}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DC623AE3-EB7C-44D8-95E3-08B21E334BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC623AE3-EB7C-44D8-95E3-08B21E334BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC623AE3-EB7C-44D8-95E3-08B21E334BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40ACF97-939F-4E7A-869A-7C558713D062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40ACF97-939F-4E7A-869A-7C558713D062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40ACF97-939F-4E7A-869A-7C558713D062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40ACF97-939F-4E7A-869A-7C558713D062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin</BaseOutputPath>
+    <BaseOutputPath>F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF5\ShoppingCartEF5\bin</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

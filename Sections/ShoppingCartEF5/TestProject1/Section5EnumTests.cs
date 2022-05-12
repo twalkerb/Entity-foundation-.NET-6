@@ -1,7 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ShoppingCartEF2.Data;
+using ShoppingCartEF4.Repositories;
+using ShoppingCartEF5.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -129,6 +135,53 @@ namespace TestProject1
             {
                 Debug.WriteLine(fruit);
             }
+        }
+
+        [TestMethod]
+        public void IEnumTestSimple()
+        {
+            var context = CreateDbContext();
+            var customerRepo = new CustomerRepository(context);
+            var customers = customerRepo.Find("FirstName", "LastName").ToList();
+        }
+
+        [TestMethod]
+        public void IncludeIEnumTestSimple()
+        {
+            var context = CreateDbContext();
+            var customerRepo = new CustomerRepository(context);
+            var customers = customerRepo.FindIncludeChildrenSimple("FirstName", "LastName").ToList();
+        }
+
+        [TestMethod]
+        public void IncludeIEnumTestSimple2()
+        {
+            var context = CreateDbContext();
+            var customerRepo = new CustomerRepository(context);
+            var customers = customerRepo.FindIncludeChildrenSimple2("FirstName", "LastName").ToList();
+        }
+
+        [TestMethod]
+        public void IncludeIEnumTestFull()
+        {
+            var context = CreateDbContext();
+            var customerRepo = new CustomerRepository(context);
+            var customers = customerRepo.FindIncludeChildrenFull("FirstName", "LastName").ToList();
+        }
+
+        public ShoppingCartDS CreateDbContext()
+        {
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appSettings.json")
+                .Build();
+
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+            var builder = new DbContextOptionsBuilder<ShoppingCartDS>();
+            builder.UseSqlServer(connectionString);
+
+            return new ShoppingCartDS(builder.Options, connectionString);
         }
 
     }

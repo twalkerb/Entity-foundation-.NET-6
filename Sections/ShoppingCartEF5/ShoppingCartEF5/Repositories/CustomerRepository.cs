@@ -55,7 +55,8 @@ namespace ShoppingCartEF4.Repositories
                 .Include(i => i.CustomerType)
                 .Single(w => w.Id == id);
         }
-        public async Task<Customer> GetWithRelatedAsync(int id)
+
+        public async Task<Customer?> GetWithRelatedAsync(int id)
         {
             return await _context.Customers
                 .Where(w => w.Id == id)
@@ -64,7 +65,7 @@ namespace ShoppingCartEF4.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<Customer> GetAsync(int id)
+        public async Task<Customer?> GetAsync(int id)
         {
             return await _context.Customers.FindAsync(id);
         }
@@ -78,9 +79,73 @@ namespace ShoppingCartEF4.Repositories
         public IEnumerable<Customer> Find(string firstName, string lastName)
         {
             var customers = _context.Customers.Where(w => w.FirstName == firstName && w.LastName == lastName);
-            return customers.ToList();
+            //return customers.ToList();
+            //return customers.AsEnumerable();
+            return customers;
 
         }
+
+        /// <summary>
+        /// Section 5 Video 3
+        /// </summary>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <returns></returns>
+        public IEnumerable<Customer> FindIncludeChildrenSimple(string firstName, string lastName)
+        {
+            var customers = _context.Customers
+                .Include("Address")
+                .Include("CustomerType")
+                .Include("BorrowedBooks")
+                .Where(w => w.FirstName == firstName && w.LastName == lastName);
+            //return customers.ToList();
+            return customers.AsEnumerable();
+            //return customers;
+
+        }
+        public IEnumerable<Customer> FindIncludeChildrenSimple2(string firstName, string lastName)
+        {
+            var customers = _context.Customers
+                .Include(i => i.Address)
+                .Include(i => i.CustomerType)
+                .Include(i => i.BorrowedBooks)
+                .Where(w => w.FirstName == firstName && w.LastName == lastName);
+            //return customers.ToList();
+            return customers.AsEnumerable();
+            //return customers;
+
+        }
+        public IEnumerable<Customer> FindIncludeChildrenFull(string firstName, string lastName)
+        {
+            var customers = _context.Customers
+                .Include(i => i.Address)
+                .Include(i => i.CustomerType)
+                .Include(i => i.BorrowedBooks)
+                .ThenInclude(borrowedBook => borrowedBook.Book)
+                .ThenInclude(book => book.PrimaryLibrary)
+                .Where(w => w.FirstName == firstName && w.LastName == lastName);
+            //return customers.ToList();
+            return customers.AsEnumerable();
+            //return customers;
+
+        }
+
+        // Find returning IQuerable - Section 5 Video 2
+        public IQueryable<Customer> FindQ(string firstName, string lastName)
+        {
+            var customers = _context.Customers.AsQueryable();
+
+            customers = customers.Where(w => w.FirstName == firstName && w.LastName == lastName);
+            return customers;
+
+        }
+
+        // Count returning int as rows of Customers - Section 5 Video 2
+        public int Count()
+        {
+            return _context.Customers.Count();
+        }
+
         public List<Customer> List(string firstName, string lastName)
         {
             var customers = _context.Customers

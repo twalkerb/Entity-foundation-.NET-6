@@ -32,6 +32,8 @@ namespace ShoppingCartEF2.Entities
         public int CustomerTypeId { get; set; }
         public CustomerType CustomerType { get; set; }
 
+        // many-to-many
+        public IList<CustomerBook> BorrowedBooks { get; set; }
 
 
     }

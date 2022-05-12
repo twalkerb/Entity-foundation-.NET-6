@@ -267,6 +267,27 @@ namespace ShoppingCartMigrations.Migrations
                     b.ToTable("CustomerBook", "Shopping");
                 });
 
+            modelBuilder.Entity("ShoppingCartEF3.Entities.CustomerSearchResult", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomSearchResults", "Shopping");
+                });
+
             modelBuilder.Entity("ShoppingCartEF3.Entities.CustomerType", b =>
                 {
                     b.Property<int>("CustomerTypeID")
@@ -334,7 +355,7 @@ namespace ShoppingCartMigrations.Migrations
                         .IsRequired();
 
                     b.HasOne("ShoppingCartEF2.Entities.Customer", "Customer")
-                        .WithMany()
+                        .WithMany("BorrowedBooks")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -348,6 +369,8 @@ namespace ShoppingCartMigrations.Migrations
                 {
                     b.Navigation("Address")
                         .IsRequired();
+
+                    b.Navigation("BorrowedBooks");
                 });
 
             modelBuilder.Entity("ShoppingCartEF2.Entities.Library", b =>
