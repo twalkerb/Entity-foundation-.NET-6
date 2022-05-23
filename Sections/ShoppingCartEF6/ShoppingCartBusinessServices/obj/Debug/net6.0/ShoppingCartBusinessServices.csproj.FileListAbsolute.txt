@@ -1,0 +1,15 @@
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingCartBusinessServices.deps.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingCartBusinessServices.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingCartBusinessServices.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingCartEF6.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingCartEF6.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.csproj.AssemblyReference.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.AssemblyInfoInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.AssemblyInfo.cs
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.csproj.CoreCompileInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.csproj.CopyComplete
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\refint\ShoppingCartBusinessServices.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ref\ShoppingCartBusinessServices.dll

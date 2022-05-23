@@ -1,0 +1,15 @@
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartMigrations3.deps.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartMigrations3.runtimeconfig.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartMigrations3.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartEF3\bin\Debug\net6.0\ShoppingCartMigrations3.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.csproj.AssemblyReference.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.AssemblyInfoInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.AssemblyInfo.cs
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.csproj.CoreCompileInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.csproj.CopyComplete
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ref\ShoppingCartMigrations3.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\ShoppingCartMigrations3.genruntimeconfig.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF3\ShoppingCartMigrations3\obj\Debug\net6.0\refint\ShoppingCartMigrations3.dll

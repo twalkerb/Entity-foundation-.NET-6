@@ -1,0 +1,14 @@
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\bin\Debug\net6.0\ShoppingCartEF4.deps.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\bin\Debug\net6.0\ShoppingCartEF4.runtimeconfig.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\bin\Debug\net6.0\ShoppingCartEF4.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\bin\Debug\net6.0\ShoppingCartEF4.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.csproj.AssemblyReference.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.AssemblyInfoInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.AssemblyInfo.cs
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.csproj.CoreCompileInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\refint\ShoppingCartEF4.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ShoppingCartEF4.genruntimeconfig.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF4\ShoppingCartEF4\obj\Debug\net6.0\ref\ShoppingCartEF4.dll
