@@ -1,0 +1,14 @@
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\bin\Debug\net6.0\ShoppingCartDataService.deps.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\bin\Debug\net6.0\ShoppingCartDataService.runtimeconfig.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\bin\Debug\net6.0\ShoppingCartDataService.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\bin\Debug\net6.0\ShoppingCartDataService.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.csproj.AssemblyReference.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.AssemblyInfoInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.AssemblyInfo.cs
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.csproj.CoreCompileInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\refint\ShoppingCartDataService.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ShoppingCartDataService.genruntimeconfig.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartDataService\ShoppingCartDataService\obj\Debug\net6.0\ref\ShoppingCartDataService.dll

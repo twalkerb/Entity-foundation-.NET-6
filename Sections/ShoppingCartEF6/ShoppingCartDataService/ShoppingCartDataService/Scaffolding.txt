@@ -1,0 +1,7 @@
+﻿from the PMC (Package Manager Console)
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=vs
+
+
+ Scaffold-DbContext 'Data Source=DevOne;Initial Catalog=ShoppingCartDev;integrated security=True;' Microsoft.EntityFrameworkCore.SqlServer -tables Customers -Context ShoppingCartContext -ContextDir Data -OutputDir Models -Namespace EFCore6Demo.DataServices.ShoppingCart.Models -ContextNamespace EFCore6Demo.DataServices.ShoppingCart.Data
+ 
+ Scaffold-DbContext 'Data Source=DevOne;Initial Catalog=ShoppingCartDev;integrated security=True;' Microsoft.EntityFrameworkCore.SqlServer -DataAnnotations -Context ShoppingCartContext -ContextDir Data -OutputDir Models -Namespace EFCore6Demo.DataServices.ShoppingCart.Models -ContextNamespace EFCore6Demo.DataServices.ShoppingCart.Data -Force

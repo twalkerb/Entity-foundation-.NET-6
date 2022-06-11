@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using ShoppingCartEF2.Entities;
 using ShoppingCartEF2.Generator;
 using ShoppingCartEF3.Entities;
+using ShoppingCartEF6.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace ShoppingCartEF2.Data
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Library> Libaries { get; set; }
+        public DbSet<vwCustomerGroupBorrowedBook> vwCustomerGroupBorrowedBooks { get; set; }
 
 
         // raw Sql Support
@@ -98,6 +100,9 @@ namespace ShoppingCartEF2.Data
             // This can only be configured using Fluent API
             modelBuilder.Entity<CustomerBook>().HasKey(cb => new { cb.CustomerId, cb.BookId });
 
+            modelBuilder.Entity<vwCustomerGroupBorrowedBook>()
+                .ToView(nameof(vwCustomerGroupBorrowedBooks))
+                .HasKey(t => t.InternationStandardBookNumber);
         }
 
     }
