@@ -16,19 +16,19 @@ namespace TestProject1
     public class IQueryableTests
     {
 
-        [TestMethod]
-        public void FindExpressionTreeTests()
-        {
-            var context = CreateDbContext();
-            var customerRepo = new CustomerRepository(context);
-            var firstName = "FirstName";
-            var lastName = "LastName";
+        //[TestMethod]
+        //public void FindExpressionTreeTests()
+        //{
+        //    var context = CreateDbContext();
+        //    var customerRepo = new CustomerRepository(context);
+        //    var firstName = "FirstName";
+        //    var lastName = "LastName";
 
-            var itemsIQuerable = customerRepo.FindQ(firstName, lastName);
-            var exprTree = itemsIQuerable.Expression;
-            var exprTreeText = exprTree.ToString();
+        //    var itemsIQuerable = customerRepo.FindQ(firstName, lastName);
+        //    var exprTree = itemsIQuerable.Expression;
+        //    var exprTreeText = exprTree.ToString();
 
-        }
+        //}
 
         [TestMethod]
         public void InsertForVolumeTests()
@@ -51,25 +51,25 @@ namespace TestProject1
             Assert.IsTrue(rowCount >= rowCountDesired);
         }
 
-        [TestMethod]
-        public void FindVolumeTests()
-        {
-            var context = CreateDbContext();
-            var customerRepo = new CustomerRepository(context);
-            var firstName = "FirstName";
-            var lastName = "LastName";
+        //[TestMethod]
+        //public void FindVolumeTests()
+        //{
+        //    var context = CreateDbContext();
+        //    var customerRepo = new CustomerRepository(context);
+        //    var firstName = "FirstName";
+        //    var lastName = "LastName";
 
-            var startTime = DateTime.Now;
-            var itemsIEnumberable = customerRepo.Find(firstName, lastName).ToList();
-            var startEndTime = DateTime.Now;
-            var itemsIQuerable = customerRepo.FindQ(firstName, lastName).ToList();
-            var endTime = DateTime.Now;
+        //    var startTime = DateTime.Now;
+        //    var itemsIEnumberable = customerRepo.Find(firstName, lastName).ToList();
+        //    var startEndTime = DateTime.Now;
+        //    var itemsIQuerable = customerRepo.FindQ(firstName, lastName).ToList();
+        //    var endTime = DateTime.Now;
 
-            var ienumTime = startEndTime.Subtract(startTime);
-            var iqueryTime = endTime.Subtract(startEndTime);
-            Assert.IsTrue(ienumTime > iqueryTime);
+        //    var ienumTime = startEndTime.Subtract(startTime);
+        //    var iqueryTime = endTime.Subtract(startEndTime);
+        //    Assert.IsTrue(ienumTime > iqueryTime);
 
-        }
+        //}
 
         public ShoppingCartDS CreateDbContext()
         {

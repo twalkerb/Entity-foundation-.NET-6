@@ -12,3 +12,6 @@ F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartEF6\obj\Debug\net6.0\ShoppingCartEF6.pdb
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartEF6\obj\Debug\net6.0\ShoppingCartEF6.genruntimeconfig.cache
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartEF6\obj\Debug\net6.0\ref\ShoppingCartEF6.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartEF6\bin\Debug\net6.0\ShoppingBase.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartEF6\bin\Debug\net6.0\ShoppingBase.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartEF6\obj\Debug\net6.0\ShoppingCartEF6.csproj.CopyComplete

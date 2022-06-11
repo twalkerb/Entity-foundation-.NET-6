@@ -442,3 +442,5 @@ F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\TestProject1\obj\Debug\net6.0\TestProject1.pdb
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\TestProject1\obj\Debug\net6.0\TestProject1.genruntimeconfig.cache
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\TestProject1\obj\Debug\net6.0\ref\TestProject1.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\TestProject1\bin\Debug\net6.0\ShoppingBase.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\TestProject1\bin\Debug\net6.0\ShoppingBase.pdb

@@ -542,11 +542,20 @@
           }
         }
       },
+      "ShoppingBase/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.5"
+        },
+        "runtime": {
+          "ShoppingBase.dll": {}
+        }
+      },
       "ShoppingCartEF6/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3",
           "Microsoft.Extensions.Configuration": "6.0.1",
-          "Microsoft.Extensions.Configuration.Json": "6.0.0"
+          "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "ShoppingBase": "1.0.0"
         },
         "runtime": {
           "ShoppingCartEF6.dll": {}
@@ -895,6 +904,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "ShoppingBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ShoppingCartEF6/1.0.0": {
       "type": "project",

@@ -13,3 +13,5 @@ F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\refint\ShoppingCartBusinessServices.dll
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ShoppingCartBusinessServices.pdb
 F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\obj\Debug\net6.0\ref\ShoppingCartBusinessServices.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingBase.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingCartBusinessServices\bin\Debug\net6.0\ShoppingBase.pdb

@@ -145,29 +145,29 @@ namespace TestProject1
             var customers = customerRepo.Find("FirstName", "LastName").ToList();
         }
 
-        [TestMethod]
-        public void IncludeIEnumTestSimple()
-        {
-            var context = CreateDbContext();
-            var customerRepo = new CustomerRepository(context);
-            var customers = customerRepo.FindIncludeChildrenSimple("FirstName", "LastName").ToList();
-        }
+        //[TestMethod]
+        //public void IncludeIEnumTestSimple()
+        //{
+        //    var context = CreateDbContext();
+        //    var customerRepo = new CustomerRepository(context);
+        //    var customers = customerRepo.FindIncludeChildrenSimple("FirstName", "LastName").ToList();
+        //}
 
-        [TestMethod]
-        public void IncludeIEnumTestSimple2()
-        {
-            var context = CreateDbContext();
-            var customerRepo = new CustomerRepository(context);
-            var customers = customerRepo.FindIncludeChildrenSimple2("FirstName", "LastName").ToList();
-        }
+        //[TestMethod]
+        //public void IncludeIEnumTestSimple2()
+        //{
+        //    var context = CreateDbContext();
+        //    var customerRepo = new CustomerRepository(context);
+        //    var customers = customerRepo.FindIncludeChildrenSimple2("FirstName", "LastName").ToList();
+        //}
 
-        [TestMethod]
-        public void IncludeIEnumTestFull()
-        {
-            var context = CreateDbContext();
-            var customerRepo = new CustomerRepository(context);
-            var customers = customerRepo.FindIncludeChildrenFull("FirstName", "LastName").ToList();
-        }
+        //[TestMethod]
+        //public void IncludeIEnumTestFull()
+        //{
+        //    var context = CreateDbContext();
+        //    var customerRepo = new CustomerRepository(context);
+        //    var customers = customerRepo.FindIncludeChildrenFull("FirstName", "LastName").ToList();
+        //}
 
         public ShoppingCartDS CreateDbContext()
         {

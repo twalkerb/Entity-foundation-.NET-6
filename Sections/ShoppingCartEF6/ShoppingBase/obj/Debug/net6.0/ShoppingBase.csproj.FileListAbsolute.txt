@@ -1,0 +1,12 @@
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\bin\Debug\net6.0\ShoppingBase.deps.json
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\bin\Debug\net6.0\ShoppingBase.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\bin\Debug\net6.0\ShoppingBase.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.csproj.AssemblyReference.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.AssemblyInfoInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.AssemblyInfo.cs
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.csproj.CoreCompileInputs.cache
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\refint\ShoppingBase.dll
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ShoppingBase.pdb
+F:\Development\GitHub\Entity-Fundamentals-Using-.NET-6\Sections\ShoppingCartEF6\ShoppingBase\obj\Debug\net6.0\ref\ShoppingBase.dll
